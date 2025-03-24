@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden; /* Desabilitar barra de rolagem */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px; 
+}
+
+header {
+    background-color: #15b0f8; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.icone {
+    margin-bottom: 20px; /* Adicionar margem inferior para aumentar a distância da info_tutor */
+    padding: 10px; /* Adicionar padding para distanciar da borda */
+}
+
+.info_tutor {
+    display: flex;
+    justify-content: center; /* Centralizar o conteúdo horizontalmente */
+    align-items: flex-start;
+    margin: 40px 20px 20px 20px; /* Adicionar margem superior para mover para baixo */
+    flex-wrap: wrap; /* Permitir quebra para telas menores */
+}
+
+.box {
+    width: 45%; /* Ajustar largura para caber ao lado do carrossel */
+    margin-bottom: 20px; /* Adicionar margem para espaçamento em telas menores */
+}
+
+.carousel {
+    position: relative;
+    width: 50%; /* Ajustar largura para caber ao lado das informações */
+    max-width: 600px;
+    margin-left: 20px; /* Ajustar margem para espaçamento */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 300px; /* Altura reduzida para todas as imagens */
+    object-fit: cover; /* Garantir que as imagens cubram a área sem distorção */
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+.carousel .prev, .carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.logo {
+    padding: 10px; /* Adicionar padding para distanciar da borda */
+}
+
+.logo img {
+    border-radius: 50%; /* Tornar a imagem do logo redonda */
+    margin-top: -100px; /* Mover o logo para cima */
+}
+
+.icone img {
+    margin-top: -30px; /* Mover imagens para cima */
+}
+
+.rating {
+    margin-top: 10px; /* Adicionar margem para espaçamento */
+}
+
+.star {
+    color: gold; /* Colorir as estrelas */
+    font-size: 24px; /* Ajustar tamanho das estrelas */
+    margin-right: 5px; /* Adicionar espaçamento entre as estrelas */
+}
+
