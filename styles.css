@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #15b0f8; /* Alterar a cor de fundo para #15b0f8 */
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow: hidden; /* Desabilitar barra de rolagem */
@@ -17,8 +18,8 @@ h1 {
 }
 
 header {
-    background-color: #15b0f8; /* Azul */
-    color: white;
+    background-color: #ffffff;
+    color: #15b0f8;
     text-align: center;
     padding: 20px 0;
     font-size: 24px;
@@ -36,6 +37,12 @@ header {
     align-items: flex-start;
     margin: 70px 20px 20px 20px;
     flex-wrap: wrap; /* Permitir quebra para telas menores */
+    color: #ffffff;
+}
+
+.info_tutor .box {
+    font-size: 18px; /* Aumentar o tamanho da fonte */
+    line-height: 1.5; /* Ajustar o espaçamento entre linhas para melhor legibilidade */
 }
 
 .box {
@@ -48,7 +55,7 @@ header {
     width: 800px; /* Aumentando a largura para 800 pixels */
     max-width: 750px; /* Aumentando a largura máxima para 800 pixels */
     margin-left: 20px; /* Ajustar margem para espaçamento */
-    margin-top: 0px;
+    margin-top: -135px; /* Subir o carrossel ajustando a margem superior */
     overflow: hidden;
     border-radius: 25px;
 }
@@ -84,25 +91,8 @@ header {
     right: 10px;
 }
 
-.logo {
-    padding: 10px; /* Adicionar padding para distanciar da borda */
-    margin-top: -100px; /* Mover o logo para cima */
-}
 
-.logo img {
-    border-radius: 50%; /* Tornar a imagem do logo redonda */
-}
-
-.icone img {
-    margin-top: -30px; /* Mover imagens para cima */
-}
-
-.rating {
-    margin-top: 10px; /* Adicionar margem para espaçamento */
-}
-
-.star {
-    color: gold; /* Colorir as estrelas */
-    font-size: 24px; /* Ajustar tamanho das estrelas */
-    margin-right: 5px; /* Adicionar espaçamento entre as estrelas */
+.patas {
+    width: 6%; /* Ajuste o tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
 }
