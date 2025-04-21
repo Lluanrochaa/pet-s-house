@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Adicionar Pet</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+  
 </head>
 <body>
-    <h1>Cadastro de Pet</h1>
+
+  <div class="container">
+    <h2>Adicionar pet</h2>
+    <div class="tabs">
+      <input type="radio" id="dog" name="animal" checked>
+      <label for="dog" class="tab">🐶 Cachorro</label>
+      <input type="radio" id="cat" name="animal">
+      <label for="cat" class="tab">🐱 Gato</label>
+    </div>
+
+    <div class="img-upload">
+      <img src="#" alt="Foto Pet" />
+      <span>Adicione uma foto</span>
+    </div>
+
+    <div class="Gênero">
+      <label>Gênero</label>
+      <div class="gender-btns">
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male" class="gender">♂️ Macho</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female" class="gender">♀️ Fêmea</label>
+      </div>
+    </div>
+
+    <div class="Nome-Pet">
+      <label>Nome</label>
+      <input type="text" placeholder="Digite o nome">
+    </div>
+
+    <div class="Raça">
+      <label>Raça</label>
+      <input type="text" id="breed-input" placeholder="Digite a raça">
+      <ul id="breed-suggestions"></ul>
+    </div>
+
+    <div class="porte">
+      <label>Tamanho</label>
+      <select>
+        <option>Selecione aqui</option>
+        <option>Até 5Kg</option>
+        <option>5 a 10Kg</option>
+        <option>10 a 20Kg</option>
+        <option>20 a 40Kg</option>
+        <option>Acima de 40Kg</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Aniversário</label>
+      <input type="date" id="birthday" name="birthday">
+      <div class="checkbox-inline">
+        <input type="checkbox" id="conheceData">
+        <label for="conheceData">Sei o dia e o mês</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Quais das vacinas tomou no último ano?</label>
+      <div class="vaccines">
+        <button class="vaccine-btn" onclick="toggleVaccine(this)">V8/V10</button>
+        <button class="vaccine-btn" onclick="toggleVaccine(this)">Antirrábica</button>
+      </div>
+    </div>
+
+    <script>
+      function toggleVaccine(button) {
+        button.classList.toggle('selected');
+      }
+    </script>
+
+    <div class="buttons">
+      <button class="cancel">Cancelar</button>
+      <button class="save">Salvar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
