@@ -5,16 +5,16 @@
 }
 
 body {
-    background-color: #15b0f8; /* Alterar a cor de fundo para #15b0f8 */
+    background-color: #15b0f8;
     margin: 0;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow: hidden; /* Desabilitar barra de rolagem */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
 }
 
 h1 {
     text-align: center;
     margin-top: 20px;
-    font-size: 40px; 
+    font-size: 40px;
 }
 
 header {
@@ -27,44 +27,44 @@ header {
 }
 
 .icone {
-    margin-bottom: 20px; /* Adicionar margem inferior para aumentar a distância da info_tutor */
-    padding: 10px; /* Adicionar padding para distanciar da borda */
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .info_tutor {
     display: flex;
-    justify-content: center; /* Centralizar o conteúdo horizontalmente */
+    justify-content: flex-start;
     align-items: flex-start;
     margin: 70px 20px 20px 20px;
-    flex-wrap: wrap; /* Permitir quebra para telas menores */
+    flex-wrap: wrap;
     color: #ffffff;
 }
 
 .info_tutor .box {
-    font-size: 18px; /* Aumentar o tamanho da fonte */
-    line-height: 1.5; /* Ajustar o espaçamento entre linhas para melhor legibilidade */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .box {
-    width: 45%; /* Ajustar largura para caber ao lado do carrossel */
-    margin-bottom: 20px; /* Adicionar margem para espaçamento em telas menores */
+    width: 45%;
+    margin-bottom: 20px;
 }
 
 .carousel {
     position: relative;
-    width: 800px; /* Aumentando a largura para 800 pixels */
-    max-width: 750px; /* Aumentando a largura máxima para 800 pixels */
-    margin-left: 20px; /* Ajustar margem para espaçamento */
-    margin-top: -135px; /* Subir o carrossel ajustando a margem superior */
+    width: 800px;
+    max-width: 750px;
+    margin: 0 20px 0 auto;
+    margin-top: -135px;
     overflow: hidden;
     border-radius: 25px;
+    float: right;
 }
-
 
 .carousel img {
     width: 100%;
-    height: 600px; /* Altura reduzida para todas as imagens */
-    object-fit: cover; /* Garantir que as imagens cubram a área sem distorção */
+    height: 600px;
+    object-fit: cover;
     display: none;
 }
 
@@ -73,14 +73,21 @@ header {
 }
 
 .carousel .prev, .carousel .next {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 32px;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+    z-index: 10;
 }
 
 .carousel .prev {
@@ -91,8 +98,7 @@ header {
     right: 10px;
 }
 
-
 .patas {
-    width: 6%; /* Ajuste o tamanho desejado */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 6%;
+    height: auto;
 }
